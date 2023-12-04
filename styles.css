@@ -2,26 +2,103 @@
     width: 1px;
 }
 
-.feh-content {
-  max-width: 300px;
-  text-align: center;
-  background-color: #fff;
-  padding: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+#content {
+    background-color: #C2B280;
 }
 
-.feh-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
+.cardsIndex {
+    background-color: #C2B280;
 }
 
-.feh-content h3 {
-  margin: 0;
-  font-size: 1.2em;
-  color: #333;
+#bodyIndex, #bodyMarketplace {
+    background-color: #C2B280;
+}
+
+#pageHeader {
+    background-image: url(img/diosa1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#pageHeader h2,
+#pageHeader p {
+    color: #fff;
+}
+
+/* Blog Page */
+
+#pageHeader.blogHeader {
+    background-image: url(img/diosa3.jpg);
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blogBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blogImage {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blogDetails {
+    width: 50%;
+}
+
+#blog .blogDetails a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #f3eaf7;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blogDetails a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #f3eaf7;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blogDetails a:hover {
+    color: #d7837d;
+}
+
+#blog .blogDetails a:hover::after {
+    background-color: #d7837d;
+}
+
+#blog .blogBox h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
 }
 
 /* GENERAL STYLING */
