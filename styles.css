@@ -93,7 +93,7 @@
 
 #blog .blogBox h1 {
     position: absolute;
-    top: -40px;
+    top: -60px;
     left: 0;
     font-size: 70px;
     font-weight: 700;
@@ -465,6 +465,17 @@
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
     
     #map {
@@ -532,5 +543,32 @@
     .cardLogos {
       font-size: 12px;
     }
+
+    
+
+    /* Blog Page */
+
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blogBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blogImage {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #blog .blogDetails {
+        width: 100%;
+    }
+
+
+
 
 }
