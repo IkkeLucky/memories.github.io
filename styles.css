@@ -29,12 +29,44 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transform: scale(0);
+  transition: transform .5s ease, height .2s ease;
 }
 
 .wrappercenter {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+
+.wrapper .form-box.login {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+  transition: transform .18s ease;
+  transform: translateX(0);
 }
 
 .wrapper .form-box {
