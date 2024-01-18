@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maemories</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,35 +17,42 @@
 
 <body>
 
-    <div id="navi">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo-white.png" style="width: 100px; height: 50px;" alt="image">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+    <header>
+        <nav class="bg-blue-500 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="index.html" class="flex items-center">
+                    <img src="img/logo-black.png" class="mr-3 h-6 sm:h-9" alt="Maemories Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Maemories</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="flex-row justify-between items-center w-full lg:flex lg:w-auto lg:order-1 pb-4" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        
+                        <li>
+                            <a href="index.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Index</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">News</a>
+                        <li>
+                            <a href="social.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Social</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="marketplace.html">Marketplace</a>
+                        <li>
+                            <a href="news.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">News</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="social.html">Social</a>
+                        <li>
+                            <a href="marketplace.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Log In</a>
-                        </li>
+                        
+                        
                     </ul>
                 </div>
+            </div>
         </nav>
-    </div>
+    </header>
 
 
 
@@ -52,7 +60,7 @@
     <section id="blog">
         <div class="blogBox">
             <div class="blogImage">
-                <img src="img/maintenance.png" alt="">
+                <img src="img/maintenance.webp" alt="picture of maintenance">
             </div>
             <div class="blogDetails">
                 <h4 style="color: black;">General maintenance in Turin</h4>
@@ -63,7 +71,7 @@
         </div>
         <div class="blogBox">
             <div class="blogImage">
-                <img src="img/annual.png" alt="">
+                <img src="img/annual.webp" alt="picture of annual dinner">
             </div>
             <div class="blogDetails">
                 <h4 style="color: black;">Annual dinner with BarbaraB</h4>
@@ -74,7 +82,7 @@
         </div>
         <div class="blogBox">
             <div class="blogImage">
-                <img src="img/turn.png" alt="">
+                <img src="img/turn.webp" alt="picture of government decision">
             </div>
             <div class="blogDetails">
                 <h4 style="color: black;">The state gives an unexpected turn</h4>
@@ -85,7 +93,7 @@
         </div>
         <div class="blogBox">
             <div class="blogImage">
-                <img src="img/roberto.png" alt="">
+                <img src="img/roberto.webp" alt="picture of roberto found">
             </div>
             <div class="blogDetails">
                 <h4 style="color: black;">Roberto has been found!</h4>

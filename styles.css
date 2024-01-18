@@ -1,8 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-attachment: fixed;
+  background-color: #C2B280;
+}
+
+#comments {
+  background-color: #2da4aa!important;
 }
 
 .container {
@@ -121,7 +130,7 @@ body {
     }
 
     .titleIndex h2 {
-        margin-top: 400px;
+        margin-top: 200px;
         color: whitesmoke;
         text-shadow: 2px 2px #000000;
         font-size: 35px;
